@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $mgBlack;
+}
+
+body {
+    background-color: $bodyColor;
+}
+
+::selection {
+    color: $mgPurple;
+    background: $mgYellow;
+}
+
+.coloredSeperator {
+    width: 100%;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .leftColoredSeperator {
+        width: 33.3%;
+        height: 2px;
+        background-color: $mgPurple;
+    }
+    .middleColoredSeperator {
+        width: 33.3%;
+        height: 2px;
+        background-color: $mgGreen;
+    }
+    .rightColoredSeperator {
+        width: 33.3%;
+        height: 2px;
+        background-color: $mgYellow;
+    }
+}
+
+%h1 {
+    font-size: $h1Size;
+    text-align: center;
+    font-family: $headerFont1;
+}
+
+%h2 {
+    font-size: $h2Size;
+    text-align: center;
+    font-family: $headerFont2;
+}
+
+%h3 {
+    font-size: $h3Size;
+    text-align: center;
+    font-family: $headerFont1;
+}
+
+%h4 {
+    font-size: $h3Size;
+    text-align: left;
+    font-family: $headerFont1;
+}
+
+%p {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: $textFont1;
+    font-size: $pSize;
+}
+
+.boldSpan {
+    font-weight: bold;
+}
+
+.italicSpan {
+    font-style: italic;
+}

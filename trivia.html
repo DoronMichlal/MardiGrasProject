@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+        <!-- ANIMATION ON SCROLL -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+        <!-- FANCY BOX -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <!-- LOCAL CSS FILE -->
+        <link rel="stylesheet" href="css/trivia.css" />
+        <!-- Icon -->
+        <link href="images/icon.png" rel="icon" />
+        <title>Trivia</title>
+    </head>
+
+    <body>
+        <!-- Header > Navigation Bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light" id="navBarInaalAbuk">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo.png" alt="Logo" id="logo" />
+                    </a>
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <div class="nav_con theContainer1">Home</div>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">
+                                <div class="nav_con theContainer2">About</div>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="media.html">
+                                <div class="nav_con theContainer3">Media</div>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="faq.html">
+                                <div class="nav_con theContainer4">FAQ</div>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">
+                                <div class="nav_con theContainer5">Contact</div>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="trivia.html">
+                                <div class="nav_con theContainer6">trivia</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Site Content -->
+        <div id="showcase">
+            <div id="showcaseContentLeft">
+                <a href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel" target="_blank">
+                    <div class="card border-0" data-aos="zoom-in">
+                        <img src="images/Sponsors/Sheraton Hotel.jpg" class="card-img-top" alt="Sheraton Hotel" />
+                        <div class="card-body oddCard">
+                            <h3>Sheraton Hotel</h3>
+                            <p class="card-text">Make your getaway to Sheraton New Orleans Hotel and enjoy the benefits of our perfect location in the heart of the city. Situated in downtown New Orleans, steps from the famed French Quarter, we're within walking distance of Bourbon Street, the Riverwalk and much more.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.acehotel.com/neworleans" target="_blank">
+                    <div class="card border-0" data-aos="zoom-in">
+                        <img src="images/Sponsors/Ace Hotel.jpg" class="card-img-top" alt="Ace Hotel" />
+                        <div class="card-body evenCard">
+                            <h3>Ace Hotel</h3>
+                            <p class="card-text">Located in the Warehouse District of New Orleans, within a 5-minute walk to Harrah's Casino, Ace Hotel New Orleans boasts a rooftop bar and award-winning restaurant. The hotel has a seasonal outdoor pool, fitness centre, and guests can enjoy live music on-site.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://walk-ons.com/locations" target="_blank">
+                    <div class="card border-0" data-aos="zoom-in">
+                        <img src="images/Sponsors/Walk On's.jpg" class="card-img-top" alt="Walk-on's bistreaux and bar" />
+                        <div class="card-body oddCard">
+                            <h3>Walk-on's bistreaux and bar</h3>
+                            <p class="card-text">The Walk-On's Story We start every dish from scratch and use fresh ingredients to bring our mouthwatering, Cajun cuisine to life. And whether you're here for dinner with the family, date night, cocktails with the girls or to watch a game on the big screen, hope to see you soon!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.ritzcarlton.com/en/hotels/new-orleans" target="_blank">
+                    <div class="card border-0" data-aos="zoom-in">
+                        <img src="images/Sponsors/The Ritz-Carlton Hotel.jpg" class="card-img-top" alt="The Ritz-Carlton Hotel" />
+                        <div class="card-body evenCard">
+                            <h3>The Ritz-Carlton Hotel</h3>
+                            <p class="card-text">Rich in history and personality, New Orleans is unlike any other US city. Honoring its spirit and elegance, The Ritz-Carlton, New Orleans invites visitors to its French Quarter retreat, set within a 1908 Beaux Arts building. Here, one can bask in the silence of the hotel’s beautiful.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div id="showcaseContentMiddle">
+                <!-- TRIVIA START -->
+
+                <h1>Trivia</h1>
+                <br />
+
+                <p>
+                    "There are lots of misconceptions about Mardi Gras... <br />
+                    how much do you really know about it?"
+                </p>
+
+                <form name="trivia">
+                    <!-- QUESTION 1 -->
+                    <div class="question">
+                        <span id="q1correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q1wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>1: True or False: The first organised Mardi Gras celebration in America took place in New Orleans.</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q1a" name="question1" value="true" required />
+                            True<br />
+
+                            <input type="radio" id="q1b" name="question1" value="false" required />
+                            False
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 2 -->
+                    <div class="question">
+                        <span id="q2correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q2wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 2: Which of the following is not one of New Orleans' Mardi Gras colors?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q2a" name="question2" value="green" required />
+                            Green<br />
+
+                            <input type="radio" id="q2b" name="question2" value="yellow" required />
+                            Yellow<br />
+
+                            <input type="radio" id="q2c" name="question2" value="blue" required />
+                            Blue<br />
+
+                            <input type="radio" id="q2d" name="question2" value="purple" required />
+                            Purple
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 3 -->
+                    <div class="question">
+                        <span id="q3correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q3wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 3: Which of the New Orleans Mardi Gras colors is not a Mobilian Mardi Gras color?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q3a" name="question3" value="blue" required />
+                            Blue<br />
+
+                            <input type="radio" id="q3b" name="question3" value="purple" required />
+                            Purple<br />
+
+                            <input type="radio" id="q3c" name="question3" value="green" required />
+                            Green<br />
+
+                            <input type="radio" id="q3d" name="question3" value="yellow" required />
+                            Yellow
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 4 -->
+                    <div class="question">
+                        <span id="q4correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q4wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 4: What medieval tradition can Mardi Gras be traced back to?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q4a" name="question4" value="ordinary citizens dressing in costume to celebrate Lent" required />
+                            Ordinary citizens dressing in costume to celebrate Lent<br />
+
+                            <input type="radio" id="q4b" name="question4" value="parading held in celebration of Lent" required />
+                            Parading held in celebration of Lent<br />
+
+                            <input type="radio" id="q4c" name="question4" value="feasting before the arrival of Lent" required />
+                            Feasting before the arrival of Lent<br />
+
+                            <input type="radio" id="q4d" name="question4" value="the throwing of trinkets by children to celebrate Lent" required />
+                            The throwing of trinkets by children to celebrate Lent
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 5 -->
+                    <div class="question">
+                        <span id="q5correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q5wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 5: What does the French expression 'Mardi Gras' literally translate to in English?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q5a" name="question5" value="Fat Tuesday" required />
+                            Fat Tuesday<br />
+
+                            <input type="radio" id="q5b" name="question5" value="Fat Wednesday" required />
+                            Fat Wednesday<br />
+
+                            <input type="radio" id="q5c" name="question5" value="Thin Wednesday" required />
+                            Thin Wednesday<br />
+
+                            <input type="radio" id="q5d" name="question5" value="Thin Tuesday" required />
+                            Thin Tuesday
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 6 -->
+                    <div class="question">
+                        <span id="q6correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q6wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 6: What is the name of the first mystic society, created in 1830?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q6a" name="question6" value="Crewe of Comos" required />
+                            Crewe of Comos<br />
+
+                            <input type="radio" id="q6b" name="question6" value="Order of Myths" required />
+                            Order of Myths<br />
+
+                            <input type="radio" id="q6c" name="question6" value="The Lost Cause Minstrels" required />
+                            The Lost Cause Minstrels<br />
+
+                            <input type="radio" id="q6d" name="question6" value="Cowbellion de Rakin Society" required />
+                            Cowbellion de Rakin Society
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 7 -->
+                    <div class="question">
+                        <span id="q7correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q7wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 7: When did this original mystic society hold its parade?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q7a" name="question7" value="Mardi Gras Day" required />
+                            Mardi Gras Day<br />
+
+                            <input type="radio" id="q7b" name="question7" value="Easter Sunday" required />
+                            Easter Sunday <br />
+
+                            <input type="radio" id="q7c" name="question7" value="Christmas Eve" required />
+                            Christmas Eve<br />
+
+                            <input type="radio" id="q7d" name="question7" value="New Years Eve" required />
+                            New Year's Eve
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 8 -->
+                    <div class="question">
+                        <span id="q8correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q8wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 8: How did the Spanish add their touch to the French Mardi Gras?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q8a" name="question8" value="by holding lighted torch parades" required />
+                            By holding lighted torch parades<br />
+
+                            <input type="radio" id="q8b" name="question8" value="by throwing woven Spanish dolls off of the floats" required />
+                            By throwing woven Spanish dolls off of the floats<br />
+
+                            <input type="radio" id="q8c" name="question8" value="by changing the name to 'Martes Gordo'" required />
+                            By changing the name to 'Martes Gordo'<br />
+
+                            <input type="radio" id="q8d" name="question8" value="by marching on a different day" required />
+                            By marching on a different day
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 9 -->
+                    <div class="question">
+                        <span id="q9correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q9wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 9: Which of the following was New Orleans' first mystic society?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q9a" name="question9" value="Order of Inca" required />
+                            Order of Inca<br />
+
+                            <input type="radio" id="q9b" name="question9" value="Crewe of Columbus" required />
+                            Crewe of Columbus<br />
+
+                            <input type="radio" id="q9c" name="question9" value="Comic Cowboys" required />
+                            Comic Cowboys<br />
+
+                            <input type="radio" id="q9d" name="question9" value="Crewe of Comos" required />
+                            Crewe of Comos
+                        </div>
+                    </div>
+
+                    <!-- QUESTION 10 -->
+                    <div class="question">
+                        <span id="q10correct" class="correctAnswer"><i class="far fa-check-circle"></i></span><span id="q10wrong" class="wrongAnswer"><i class="far fa-times-circle"></i></span>
+
+                        <h4>Question 10: Which of the following individuals gained fame for reviving Mardi Gras after the Civil War?</h4>
+
+                        <div class="answers">
+                            <input type="radio" id="q10a" name="question10" value="Michael Kraft" required />
+                            Michael Kraft<br />
+
+                            <input type="radio" id="q10b" name="question10" value="Ethel Hodgson" required />
+                            Ethel Hodgson<br />
+
+                            <input type="radio" id="q10c" name="question10" value="Daniel E. Huger" required />
+                            Daniel E. Huger<br />
+
+                            <input type="radio" id="q10d" name="question10" value="Joseph Cain" required />
+                            Joseph Cain
+                        </div>
+                    </div>
+
+                    <div id="formButtonWrapper">
+                        <input type="button" value="Submit" class="btn btn-success btn-block" id="submit" />
+                        <input type="reset" value="Restart" class="btn btn-warning btn-block" id="reset" />
+                    </div>
+
+                    <div id="score"></div>
+                </form>
+
+                <!-- TRIVIA END -->
+            </div>
+
+            <div id="showcaseContentRight">
+                <a href="https://www.premiumparking.com/P402" target="_blank">
+                    <div class="card border-0" data-aos="zoom-in">
+                        <img src="images/Sponsors/Premium Parking - P402.jpg" class="card-img-top" alt="Premium Parking - P402" />
+                        <div class="card-body oddCard">
+                            <h3>Premium Parking - P402</h3>
+                            <p class="card-text">With Premium Parking, there's no need to drive around looking for places to park in the French Quarter. We can easily track down parking lots closest to your destination with available spots. You can pay in cash or via credit card, use our app to track your parking and extend whenever.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.lcm.org/" target="_blank">
+                    <div class="card border-0" data-aos="zoom-in">
+                        <img src="images/Sponsors/Louisiana Children's Museum.jpg" class="card-img-top" alt="Louisiana Children's Museum" />
+                        <div class="card-body evenCard">
+                            <h3>Louisiana Children's Museum</h3>
+                            <p class="card-text">When you make a child’s potential visible, wonderful things happen. So we created a place where kids use play, shared exploration, and conversation to connect with the people and world around them. A place where kids can be the amazing humans they are.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://www.museumofdeath.net/" target="_blank">
+                    <div class="card border-0" data-aos="zoom-in">
+                        <img src="images/Sponsors/The Museum Of Death.jpg" class="card-img-top" alt="The Museum Of Death" />
+                        <div class="card-body oddCard">
+                            <h3>The Museum Of Death</h3>
+                            <p class="card-text">The World Famous Museum of Death was founded in June, 1995 when JD Healy and Cathee Shultz decided to fill the void in death education in this country and made death their life’s work. Evolving from the controversial Rita Dean art gallery.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.bloodymarystours.com/" target="_blank">
+                    <div class="card border-0" data-aos="zoom-in">
+                        <img src="images/Sponsors/Haunted Museum.jpg" class="card-img-top" alt="Haunted Museum" />
+                        <div class="card-body evenCard">
+                            <h3>Haunted Museum</h3>
+                            <p class="card-text">Using our paranormal equipment, holstic methods and big screen playback of your encounters, Bloody Mary Ghost Hunts are a very real hands on exp. They take place in our 200 years old haunted house in the French Quarter at 826 & 828 North Rampart Street.​</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div id="social">
+                <a class="socialLink" href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+
+                <a class="socialLink" href="https://twitter.com/MardiGrasNOLA" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+
+                <a class="socialLink" href="https://www.instagram.com/mardigrasneworleans/" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+
+                <a class="socialLink" href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank">
+                    <i class="fab fa-youtube fa-2x" data-fa-transform="grow-6"></i>
+                </a>
+
+                <a class="socialLink" href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank">
+                    <i class="fab fa-tripadvisor fa-2x"></i>
+                </a>
+            </div>
+
+            <!-- Scroll Up Button -->
+            <div id="scrollUpDivWrapper">
+                <div class="scrollUpDiv">
+                    <i class="fas fa-arrow-up fa-lg"></i>
+                </div>
+            </div>
+
+            <p>©2020 Created by Doron Michlal Raz. All rights reserved.</p>
+
+            <div id="sponsorContainer">
+                <div class="sponsorWrapper">
+                    <a href="https://www.bestneworleanshotels.com/" target="_blank">
+                        <img src="images/Sponsor1.webp" alt="Best New Orleans Hotels" />
+                    </a>
+                </div>
+
+                <div class="sponsorWrapper">
+                    <a href="http://www.experienceneworleans.com/" target="_blank">
+                        <img src="images/Sponsor2.webp" alt="Experience New Orleans " />
+                    </a>
+                </div>
+
+                <div class="sponsorWrapper">
+                    <a href="http://www.neworleansrestaurants.com/" target="_blank">
+                        <img src="images/Sponsor3.webp" alt="New Orleans Restaurants" />
+                    </a>
+                </div>
+
+                <div class="sponsorWrapper">
+                    <a href="https://www.neworleanscoupons.com/" target="_blank">
+                        <img src="images/Sponsor4.webp" alt="New Orleans Coupons" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- BOOTSTRAP SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- ANIMATION ON SCROLL SCRIPT -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <!-- FANCY BOX -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+        <!-- LOCAL SCRIPT FILES -->
+        <script src="js/main.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/trivia.js"></script>
+    </body>
+</html>

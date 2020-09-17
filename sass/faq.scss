@@ -1,0 +1,58 @@
+@import 'styles';
+
+#showcase {
+    #showcaseContentMiddle {
+        #accordion {
+            .card {
+                margin-bottom: 10px;
+
+                .card-header {
+                    display: flex;
+                    align-items: center;
+
+                    h3 {
+                        @extend %h3;
+                        padding: 5px 0 0 0;
+                        text-align: left;
+
+                        #header_one,
+                        #header_four,
+                        #header_seven,
+                        #header_ten {
+                            color: $mgPurple;
+                        }
+
+                        #header_two,
+                        #header_five,
+                        #header_eight,
+                        #header_eleven {
+                            color: $mgGreen;
+                        }
+
+                        #header_three,
+                        #header_six,
+                        #header_nine,
+                        #header_twelve {
+                            color: $mgYellow;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            transition: ease-in-out all 0.1s;
+
+                            &:hover {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+
+                .collapse {
+                    .card-body {
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+}

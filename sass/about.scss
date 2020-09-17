@@ -1,0 +1,48 @@
+@import 'styles.scss';
+
+#showcase {
+    #showcaseContentMiddle {
+        .mayor {
+            @extend %p;
+            img {
+                box-shadow: 0 13px 26px -10px rgba(0, 0, 0, 0.48);
+                float: right;
+                vertical-align: middle;
+                margin: 0 0 15px 15px;
+            }
+        }
+
+        .whenAndWhere {
+            h4 {
+                @extend %h4;
+                color: $mgPurple;
+            }
+
+            table {
+                width: 100%;
+                margin-bottom: 40px;
+
+                td:nth-child(3n + 1) {
+                    background-color: $mgPurple;
+                    color: $mgGrey;
+                }
+
+                td:nth-child(3n + 2) {
+                    background-color: $mgGreen;
+                    color: $mgBlack;
+                }
+
+                td:nth-child(3n) {
+                    background-color: $mgYellow;
+                    color: $mgBlack;
+                }
+
+                td {
+                    width: 33%;
+                    padding: 8px;
+                    border: 1px solid $mgBlack;
+                }
+            }
+        }
+    }
+}

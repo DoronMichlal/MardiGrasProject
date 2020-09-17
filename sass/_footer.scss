@@ -1,0 +1,105 @@
+footer {
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+
+    #social {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 300px;
+
+        .socialLink {
+            padding: 10px;
+        }
+
+        .socialLink:nth-child(3n) {
+            i {
+                color: $mgGreen;
+            }
+        }
+
+        .socialLink:nth-child(3n + 1) {
+            i {
+                color: $mgPurple;
+            }
+        }
+
+        .socialLink:nth-child(3n + 2) {
+            i {
+                color: $mgYellow;
+            }
+        }
+
+        i {
+            transition: ease-in-out all 0.2s;
+
+            &:hover {
+                color: #fff !important;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        color: $mgGrey;
+    }
+
+    #sponsorContainer {
+        margin: 0 auto;
+        max-width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        img {
+            max-width: 200px;
+            margin: 0 10px 10px 10px;
+
+            transition: ease-in-out all 0.3s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+#scrollUpDivWrapper {
+    display: none;
+}
+
+.scrollUpDiv {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: $mgYellow;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 55px;
+    border: 0.1em solid #333;
+    cursor: pointer;
+
+    transition: ease-in-out all 0.3s;
+
+    &:hover {
+        transform: scale(1.5);
+        background-color: $mgGreen;
+        color: $mgPurple;
+        border: 0.1em solid $mgYellow;
+
+        i {
+            color: $mgPurple;
+        }
+    }
+
+    i {
+        color: #333;
+    }
+}

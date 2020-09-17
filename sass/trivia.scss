@@ -1,0 +1,79 @@
+@import 'styles';
+
+#showcase {
+    #showcaseContentMiddle {
+        form {
+            margin-bottom: 10px;
+
+            .question {
+                background-color: $triviaBGC;
+                width: 80%;
+                margin: 0 auto 10px auto;
+                padding: 15px;
+
+                #q1correct,
+                #q2correct,
+                #q3correct,
+                #q4correct,
+                #q5correct,
+                #q6correct,
+                #q7correct,
+                #q8correct,
+                #q9correct,
+                #q10correct,
+                #q1wrong,
+                #q2wrong,
+                #q3wrong,
+                #q4wrong,
+                #q5wrong,
+                #q6wrong,
+                #q7wrong,
+                #q8wrong,
+                #q9wrong,
+                #q10wrong {
+                    display: none;
+                }
+
+                .correctAnswer {
+                    i {
+                        color: $correctAnswer;
+                        font-size: $h3Size;
+                    }
+                }
+
+                .wrongAnswer {
+                    i {
+                        color: $wrongAnswer;
+                        font-size: $h3Size;
+                    }
+                }
+
+                h4 {
+                    @extend %h4;
+                    display: inline;
+                }
+
+                .answers {
+                    margin-top: 10px;
+                }
+            }
+
+            #formButtonWrapper {
+                width: 80%;
+                margin: 0 auto;
+
+                #reset {
+                    display: none;
+                }
+            }
+
+            #score {
+                background-color: #ccc;
+                width: 80%;
+                margin: 10px auto;
+                padding: 15px;
+                display: none;
+            }
+        }
+    }
+}

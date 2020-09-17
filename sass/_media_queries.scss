@@ -1,0 +1,115 @@
+/********************************************
+Small devices - Phone
+********************************************/
+@media screen and (max-width: 767px) {
+    #showcase {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'left'
+            'middle'
+            'right';
+
+        #showcaseContentMiddle {
+            .theImageCon {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        #showcaseContentLeft,
+        #showcaseContentRight {
+            .card {
+                width: 80%;
+                margin: 20px auto;
+            }
+        }
+    }
+
+    footer {
+        #sponsorContainer {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+/********************************************
+Medium devices - Tablet
+********************************************/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #showcase {
+        grid-template-columns: 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'left left'
+            'middle middle'
+            'right right';
+
+        #showcaseContentMiddle {
+            .theImageCon {
+                img {
+                    max-width: 80%;
+                }
+            }
+        }
+
+        #showcaseContentLeft,
+        #showcaseContentRight {
+            margin: 0 auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            a {
+                width: 50%;
+                min-height: 40%;
+                .card {
+                    margin: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+        #sponsorContainer {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+/********************************************
+Large devices
+********************************************/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #showcase {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'left middle middle middle right';
+
+        #showcaseContentMiddle {
+            padding: 0 10px;
+            .theImageCon {
+                img {
+                    max-width: 80%;
+                }
+            }
+        }
+
+        #showcaseContentLeft,
+        #showcaseContentRight {
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: space-between;
+
+            a {
+                .card {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
